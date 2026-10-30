@@ -1,0 +1,43 @@
+1. What is the difference between a class and an object?
+
+A class is a blueprint that describes what data something has and what it can do. An object is an actual instance built from that blueprint. In my program, Product is the class, while Product("P004", "Monitor", 299.99, 10) creates one specific object with its own ID, name, price and stock. I can make many Product objects from the same class, and each keeps its own values.
+
+2. Why is Product a suitable class for this system?
+
+Product is a clear noun in the inventory system, and every product has the same kind of data (ID, name, price, stock) and the same kind of behaviour (update its stock, display itself). Since the store handles many products that all follow the same pattern, it makes sense to define that pattern once as a class instead of repeating dictionary keys like product["stock"] everywhere, as I did in Week 5.
+
+3. What data belongs inside a Product object?
+
+Four attributes: the product ID, the name, the price and the stock quantity. These are stored as __product_id, __name, __price and __stock. Only data that describes one product belongs here. The list of all products does not belong in Product, because that is the Inventory's job.
+
+4. Why should the Product class manage its own stock rather than the main program directly changing it?
+
+If the main program could change the stock directly, Product would have no control over what values are allowed. By going through update_stock(), Product can check the value first. In my code it rejects a negative quantity and returns False, so invalid stock can never be stored. The rule also lives in one place, so I do not have to remember to check it everywhere stock is changed.
+
+5. What does encapsulation mean in your program?
+
+It means the data is kept private inside the class and other code only interacts through public methods. My Product attributes start with __, so the main program does not touch product.__stock directly. Instead it uses get_stock() to read and update_stock() to change. Python does not strictly enforce this (it uses name mangling), but it signals how the class is meant to be used and keeps the internals protected.
+
+6. What is the responsibility of the Product class?
+
+To represent and manage one product. It stores the product's information, controls how its own stock changes, and can display itself with display_information(). It does not load or save files, show menus, ask the user for input, or manage the whole collection.
+
+7. What is the responsibility of the Inventory class?
+
+To manage a collection of Product objects. It holds the list of products and provides add_product(), search_product(), display_all() and get_products(). It also checks for duplicate IDs when adding. It does not know how to handle user input or JSON files.
+
+8. How does separating these responsibilities demonstrate the Single Responsibility Principle?
+
+Each class has one clear job and one reason to change. Product changes only if what a product is changes, and Inventory changes only if the way products are collected changes. File handling and menu logic stay in the main program rather than being mixed into the classes. This made my code easier to read and test, compared with the Week 5 version where everything sat together in one file of functions.
+
+9. What information does the main program need to know about a Product?
+
+Only its public interface: how to create one with an ID, name, price and stock, and which public methods exist, such as get_name(), get_stock(), update_stock(), display_information() and to_dict(). It also needs to know that update_stock() returns True or False so it can print the right message.
+
+10. What information about the internal implementation of Product does the main program not need to know?
+
+It does not need to know how the data is stored (the private __ attributes), how the stock is validated, or how the output is formatted inside display_information(). If I later changed how Product stores its data, the main program would not need to change as long as the public methods stay the same.
+
+Personal reflection
+
+At first I was confused about how the Docker setup carried over from Lab 2, and I ran into the image not being found, so I had to rebuild it and fix my Dockerfile to copy all the files instead of only one. I also learned that a commit only saves work locally and that git push is what uploads it. Overall, the refactor showed me that the program looks the same to the user, but the design behind it is much cleaner, because each class has one clear job and the data is protected.
