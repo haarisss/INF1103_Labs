@@ -1,2 +1,2 @@
 github repository link:
-https://github.com/haarisss/INF1103_Lab2
+https://github.com/haarisss/INF1103_Labs
