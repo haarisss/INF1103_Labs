@@ -1,3 +1,93 @@
+commit fcfd9eec2e2d91574f9ce56228858a699ef86b08
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 15:12:58 2026 +0800
+
+    Added reflection answers for lab 6
+
+commit decfc82ce4cf9d2914b2b085abbfb4cda4283608
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 12:22:25 2026 +0800
+
+    Added UML class diagram for Product and Inventory
+
+commit b7e683371b5d933cdd682d937edc0206f365efa5
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 12:17:55 2026 +0800
+
+    Added .gitignore to exclude __pycache__
+
+commit 6a50805a34cc426e52065f350123401a59618576
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 12:16:43 2026 +0800
+
+    Tested OOP inventory system and updated inventory.json
+
+commit c49bd7da947ea901f3f1ca9a021eb8018bb4c4f7
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 12:02:06 2026 +0800
+
+    Updated Dockerfile
+
+commit 432705690a20973cfaa0ab47fb8fa32a238ce2f4
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 11:50:17 2026 +0800
+
+    Refactored inventory system to use Product and Inventory classes
+
+commit 3fbd2e769c5df5027e4aa59975d6350c3e9be7f6
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 11:49:29 2026 +0800
+
+    Created Inventory class to manage a collection of Products
+
+commit 079e7d55ff8df2cf993b5b9bc1e35729be73de32
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 11:48:35 2026 +0800
+
+    Created Product class with encapsulated attributes
+
+commit 96f259d90d173b2c43f642875acbda4404420756
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 2 20:26:27 2026 +0800
+
+    Finsihed dockerising and added reflection
+
+commit 1ccabf49a98a7bee48f731d3526c9b1002108f57
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 2 20:03:10 2026 +0800
+
+    Built interactive menu system connecting all inventory functions
+
+commit 15dbd720d5a5a165d8c8b33d83fd2f9f5a10b8f3
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 2 19:38:10 2026 +0800
+
+    Implemented save_inventory to write inventory list to JSON
+
+commit 01deca2fc9923756c0238fbad63b9fcc0910bf58
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 2 19:26:10 2026 +0800
+
+    Implemented load_inventory to read from JSON or start empty
+
+commit a54135e9ec1d59d096d1574f941927abb1416349
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 2 16:50:05 2026 +0800
+
+    Create inventory list and implement add_product, update_stock, search_product, display_all
+
+commit 12f3b12e46e8f05fa28114426ffbb2ec945f34da
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 2 11:22:31 2026 +0800
+
+    Create inventory list with 3 sample product dictionaries
+
+commit 66026e156b01a6bded502a1240b3ff8901543021
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Thu Oct 1 00:27:39 2026 +0800
+
+    Overall changes made and completed
+
 commit 47f69bd53db90896ed47fbc413ed8942ca99424e
 Author: Haaris <2603207@sit.singaporetech.edu.sg>
 Date:   Thu Oct 1 00:25:56 2026 +0800
