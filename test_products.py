@@ -7,3 +7,7 @@ digital = DigitalProduct("D001", "Operating System", 89.90, 100, 2500)
 print("=== Display Information ===")
 physical.display_information()
 digital.display_information()
+
+print("\n=== Fulfilment Info ===")
+print(physical.get_fulfilment_info())
+print(digital.get_fulfilment_info())

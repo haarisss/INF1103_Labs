@@ -18,3 +18,7 @@ class PhysicalProduct(Product):
         data["type"] = "physical"
         data["weight"] = self.__weight
         return data
+
+    def get_fulfilment_info(self):
+        return "Physical product: requires physical shipping."    
+    
