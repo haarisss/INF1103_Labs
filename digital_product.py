@@ -10,9 +10,8 @@ class DigitalProduct(Product):
         return self.__download_size
 
     def display_information(self):
-        print(f"ID: {self.get_product_id()} | Name: {self.get_name()} | "
-              f"Price: ${self.get_price():.2f} | Stock: {self.get_stock()} | "
-              f"Download Size: {self.__download_size} MB")
+        super().display_information()
+        print(f"   Download Size: {self.__download_size} MB")
 
     def to_dict(self):
         data = super().to_dict()
