@@ -11,3 +11,10 @@ digital.display_information()
 print("\n=== Fulfilment Info ===")
 print(physical.get_fulfilment_info())
 print(digital.get_fulfilment_info())
+
+print("\n=== Abstract Class Test ===")
+from product import Product
+try:
+    generic = Product("X001", "Generic", 10.0, 1)
+except TypeError as error:
+    print("Cannot instantiate Product:", error)
