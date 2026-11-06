@@ -1,3 +1,87 @@
+commit b27f79a83740b30f36601127e9e7b873fd174c3e
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:52:31 2026 +0800
+
+    Updated UML class diagram for inheritance and interface
+
+commit 63661ca589b5ec3da814cf17a2da32daf247a982
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:47:14 2026 +0800
+
+    Tested inventory persistence with both product types and updated inventory.json
+
+commit e929d1a42580d2d3273667c1d8c18a76d3e8428e
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:33:01 2026 +0800
+
+    Updated add product to support physical and digital types and Updated JSON loading to restore product types
+
+commit bd2ec3c35b5d9c44609d496f98bf90cbb5ec076a
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:26:57 2026 +0800
+
+    PhysicalProduct implements CanBeShipped with shipping cost calculation
+
+commit ba363b22dea7cec875d4e678ae7078476d28c1af
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:22:07 2026 +0800
+
+    Added CanBeShipped interface-style abstract base class
+
+commit 3b887b4ddcb6b61b1df2b9b22d198ba5acfa0f4c
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:20:53 2026 +0800
+
+    Made Product an abstract class with abstract get_fulfilment_info
+
+commit 3761acf333a0d9b219100d3bd500ba08ef31dbee
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:12:12 2026 +0800
+
+    Implemented get_fulfilment_info in PhysicalProduct and DigitalProduct
+
+commit e1258676633fe81f1f3741996fb6e1737afd6d10
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:10:07 2026 +0800
+
+    Reused Product display_information using super() in subclasses
+
+commit af496487f686c7cbf6dc34b8427b9231fff2c66c
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 22:53:34 2026 +0800
+
+    Added test script for physical and digital products
+
+commit c2544a7d3dba92da86e2fefe4ad9edeb91a304b1
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 22:52:54 2026 +0800
+
+    Added DigitalProduct class inheriting from Product
+
+commit 1ca87b1264e3557a05c9f73f895fedc435293a64
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 22:51:21 2026 +0800
+
+    Added PhysicalProduct class inheriting from Product
+
+commit f664f9cbb51dc0569ca6a98560e3ac589c555b4e
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 22:48:27 2026 +0800
+
+    Updated .gitignore with standard Python exclusions
+
+commit f32593b2736e32060ce1a617634d9fb2b2cf9d99
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 15:40:07 2026 +0800
+
+    changed github link
+
+commit 4e864ac848fef7fadd34e08186d79859243eb7a7
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Oct 30 15:26:04 2026 +0800
+
+    Added git log for submission
+
 commit fcfd9eec2e2d91574f9ce56228858a699ef86b08
 Author: Haaris <2603207@sit.singaporetech.edu.sg>
 Date:   Fri Oct 30 15:12:58 2026 +0800
