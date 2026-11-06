@@ -1,9 +1,21 @@
 import json
 import os
-from product import Product
+from physical_product import PhysicalProduct
+from digital_product import DigitalProduct
 from inventory import Inventory
 
 FILENAME = "inventory.json"
+
+
+def create_product(item):
+    product_type = item.get("type")
+    if product_type == "physical":
+        return PhysicalProduct(item["id"], item["name"], item["price"],
+                               item["stock"], item["weight"])
+    elif product_type == "digital":
+        return DigitalProduct(item["id"], item["name"], item["price"],
+                              item["stock"], item["download_size"])
+    return None
 
 
 def load_inventory(inventory):
@@ -11,8 +23,11 @@ def load_inventory(inventory):
         with open(FILENAME, "r") as file:
             data = json.load(file)
         for item in data:
-            product = Product(item["id"], item["name"], item["price"], item["stock"])
-            inventory.add_product(product)
+            product = create_product(item)
+            if product is not None:
+                inventory.add_product(product)
+            else:
+                print(f"Skipping item with unknown type: {item.get('id')}")
         print("inventory.json found.")
         print("Inventory loaded successfully.")
     else:
@@ -28,11 +43,25 @@ def save_inventory(inventory):
 
 def add_product(inventory):
     print("Add New Product")
+    print("1. Physical Product")
+    print("2. Digital Product")
+    type_choice = input("Select product type: ")
+    if type_choice not in ("1", "2"):
+        print("Invalid product type.")
+        return
+
     product_id = input("Product ID: ")
     name = input("Product Name: ")
     price = float(input("Price: "))
     stock = int(input("Stock Quantity: "))
-    product = Product(product_id, name, price, stock)
+
+    if type_choice == "1":
+        weight = float(input("Weight (kg): "))
+        product = PhysicalProduct(product_id, name, price, stock, weight)
+    else:
+        download_size = float(input("Download Size (MB): "))
+        product = DigitalProduct(product_id, name, price, stock, download_size)
+
     if inventory.add_product(product):
         print("Product added successfully!")
     else:
