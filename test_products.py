@@ -18,3 +18,10 @@ try:
     generic = Product("X001", "Generic", 10.0, 1)
 except TypeError as error:
     print("Cannot instantiate Product:", error)
+    
+print("\n=== Shipping Cost ===")
+light = PhysicalProduct("P002", "Book", 20.00, 50, 0.5)
+heavy = PhysicalProduct("P003", "Amplifier", 350.00, 3, 12)
+print(f"{light.get_name()}: ${light.calculate_shipping_cost():.2f}")
+print(f"{heavy.get_name()}: ${heavy.calculate_shipping_cost():.2f}")
+print("Digital has shipping?", hasattr(digital, "calculate_shipping_cost"))
