@@ -1,3 +1,4 @@
+from product import Product
 from order import Order
 from inventory import Inventory
 from supplier import Supplier
@@ -59,3 +60,20 @@ order1.remove_order_line("D001")
 print("\nAfter removing the digital line from O001:")
 order1.display_order()
 print("The Product still exists:", os_product.get_name())
+
+# ---------- Section 5: LSP ----------
+print("\n=== LSP: show_product_details ===")
+
+
+def show_product_details(product: Product) -> None:
+    product.display_information()
+    print(product.get_fulfilment_info())
+
+
+show_product_details(guitar)
+show_product_details(os_product)
+
+print("\nupdate_stock behaves the same for both subclasses:")
+for item in (guitar, os_product):
+    print(item.get_name(), "-> update to 10:", item.update_stock(10),
+          "| update to -1:", item.update_stock(-1), "| stock now:", item.get_stock())
