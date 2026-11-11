@@ -1,0 +1,28 @@
+[
+    {
+        "id": "P001",
+        "name": "Guitar",
+        "price": 499.0,
+        "stock": 5,
+        "supplier": {
+            "id": "S001",
+            "name": "TechSource",
+            "contact_email": "sales@techsource.com"
+        },
+        "type": "physical",
+        "weight": 3.5
+    },
+    {
+        "id": "D001",
+        "name": "Operating System",
+        "price": 89.9,
+        "stock": 100,
+        "supplier": {
+            "id": "S001",
+            "name": "TechSource",
+            "contact_email": "sales@techsource.com"
+        },
+        "type": "digital",
+        "download_size": 2500.0
+    }
+]
