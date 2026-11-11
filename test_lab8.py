@@ -1,3 +1,4 @@
+from inventory import Inventory
 from supplier import Supplier
 from physical_product import PhysicalProduct
 from digital_product import DigitalProduct
@@ -17,3 +18,22 @@ print("Same Supplier object?", guitar.get_supplier() is os_product.get_supplier(
 del supplier  # only removes the variable name, not the object
 print("\nAfter 'del supplier':")
 guitar.get_supplier().display_information()
+
+# ---------- Section 3: Aggregation ----------
+print("\n=== Aggregation: Inventory and Product ===")
+inventory_a = Inventory()
+inventory_b = Inventory()
+inventory_a.add_product(guitar)
+print("Inventory A:")
+inventory_a.display_all()
+
+inventory_a.remove_product("P001")
+print("Removed from Inventory A. Inventory A now:")
+inventory_a.display_all()
+print("Product still works on its own:")
+guitar.display_information()
+
+inventory_b.add_product(guitar)
+print("Added to Inventory B. Inventory B:")
+inventory_b.display_all()
+print("Same Product object in B?", inventory_b.find_product("P001") is guitar)
