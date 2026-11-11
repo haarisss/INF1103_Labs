@@ -77,3 +77,13 @@ print("\nupdate_stock behaves the same for both subclasses:")
 for item in (guitar, os_product):
     print(item.get_name(), "-> update to 10:", item.update_stock(10),
           "| update to -1:", item.update_stock(-1), "| stock now:", item.get_stock())
+    
+
+# ---------- Section 6: Polymorphism ----------
+print("\n=== Polymorphism: one loop, both product types ===")
+inventory = Inventory()
+inventory.add_product(guitar)
+inventory.add_product(os_product)
+for product in inventory.get_products():
+    product.display_information()
+    print(product.get_fulfilment_info())
