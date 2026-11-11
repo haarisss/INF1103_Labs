@@ -1,3 +1,99 @@
+commit ef21c20248eda307f3cb8e8f1ff9f3c014cae437
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 19:42:58 2026 +0800
+
+    Added lab 8 predictions and reflections
+
+commit 65ccde7d2846540b392d2dacb1ff629ee02af189
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 19:27:08 2026 +0800
+
+    Updated UML class diagram with association, aggregation, composition and types
+
+commit c1d3f5358827f4f5c51de627b965c252cbe561f7
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 19:25:01 2026 +0800
+
+    Tested inventory system with suppliers and updated inventory.json
+
+commit 19b63b79ba6f84b009c9ca399f24c06b451e665b
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 19:17:27 2026 +0800
+
+    Integrated Supplier into inventory manager with JSON persistence
+
+commit 61c70af7fe9460c924d9c92654bdf50753dc5221
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 19:13:26 2026 +0800
+
+    Added polymorphism test through Product references
+
+commit c090eff81cb732fa3f8e4e8f695d79e2c624f848
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 19:11:05 2026 +0800
+
+    Added LSP substitutability test
+
+commit 296f3ff04765a944aeed6d499977acd10b5de958
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 19:06:40 2026 +0800
+
+    Completed type hints across all classes
+
+commit 079125d1ddd820aae26c7eca0dfef9e761de1a20
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 18:59:50 2026 +0800
+
+    Added composition test for Order and OrderLine
+
+commit c1ee019bcec067014d227e9e25cd441b76eb7550
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 18:57:01 2026 +0800
+
+    Added Order class that creates and manages its OrderLines
+
+commit b42c5f8233c8b450a11020ecd4aacc3cfb049437
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 18:56:11 2026 +0800
+
+    Added OrderLine class
+
+commit c26a4368e9939bbaaf4761e97752668e152497ef
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 18:54:44 2026 +0800
+
+    Added aggregation test for Inventory and Product
+
+commit a92776aab1cd29b134f8c26499d667eefead56f4
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 18:50:39 2026 +0800
+
+    Added type hints, find_product and remove_product to Inventory
+
+commit 8f9429b9557530d9a396f6177773817fb2e802e1
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 18:49:14 2026 +0800
+
+    Added association test for Supplier and Product
+
+commit 3122cc07d98862541ca9bbde629eec9119f75c29
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 18:44:13 2026 +0800
+
+    Associated Product with Supplier and added type hints to product classes
+
+commit 7965933b80527d3d32fc4aa1fc9619f09647f7e5
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 18:15:35 2026 +0800
+
+    Added Supplier class with display_information
+
+commit ba4a6f7fe6f7bf790acd00bf4b866759f9eb3b98
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 23:53:59 2026 +0800
+
+    Added git log for submission
+
 commit b27f79a83740b30f36601127e9e7b873fd174c3e
 Author: Haaris <2603207@sit.singaporetech.edu.sg>
 Date:   Fri Nov 6 23:52:31 2026 +0800
