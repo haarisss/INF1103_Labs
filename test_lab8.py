@@ -1,3 +1,4 @@
+from order import Order
 from inventory import Inventory
 from supplier import Supplier
 from physical_product import PhysicalProduct
@@ -37,3 +38,24 @@ inventory_b.add_product(guitar)
 print("Added to Inventory B. Inventory B:")
 inventory_b.display_all()
 print("Same Product object in B?", inventory_b.find_product("P001") is guitar)
+
+# ---------- Section 4: Composition ----------
+print("\n=== Composition: Order and OrderLine ===")
+order1 = Order("O001")
+order1.add_order_line(guitar, 1)
+order1.add_order_line(os_product, 2)
+order1.display_order()
+
+order2 = Order("O002")
+order2.add_order_line(guitar, 3)
+
+line1 = order1.get_order_lines()[0]
+line2 = order2.get_order_lines()[0]
+print("\nSame Product object in both orders?", line1.get_product() is line2.get_product())
+print("Same OrderLine object in both orders?", line1 is line2)
+print("OrderLine ids:", id(line1), id(line2))
+
+order1.remove_order_line("D001")
+print("\nAfter removing the digital line from O001:")
+order1.display_order()
+print("The Product still exists:", os_product.get_name())
