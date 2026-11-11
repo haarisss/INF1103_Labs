@@ -34,3 +34,5 @@ class Inventory:
 
     def get_products(self) -> list[Product]:
         return list(self.__products)  # copy, so the internal list stays protected
+
+# I have added added and checked for type hints across my codes
