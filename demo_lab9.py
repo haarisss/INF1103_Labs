@@ -1,7 +1,7 @@
 from supplier import Supplier
 from physical_product import PhysicalProduct
 from order import Order
-from discount_strategy import NoDiscount, PercentageDiscount, BulkDiscount
+from discount_strategy import NoDiscount, PercentageDiscount, BulkDiscount, StudentDiscount
 
 print("=== Strategy: order discounts ===")
 supplier = Supplier("S001", "TechSource Pte Ltd", "sales@techsource.com")
@@ -18,6 +18,9 @@ print(f"BulkDiscount(200, 20):          ${order.calculate_total():.2f}")
 
 order.set_discount(PercentageDiscount(10))
 print(f"set_discount(PercentageDiscount(10)): ${order.calculate_total():.2f}")
+
+order.set_discount(StudentDiscount())
+print(f"StudentDiscount (5% off):       ${order.calculate_total():.2f}")
 
 small = Order("O002", BulkDiscount(200, 20))
 small.add_order_line(lamp, 1)              # 25, below the threshold
