@@ -57,3 +57,21 @@ for label, action in [
         print(label, "-> accepted (this should not happen)")
     except ValueError as error:
         print(f"{label} -> ValueError: {error}")
+        
+
+# ---------- Section 5: Exceptions ----------
+from inventory import Inventory
+from input_helpers import get_positive_float
+from product_loader import load_products
+
+print("\n=== get_positive_float ===")
+price = get_positive_float("Enter a price: ")
+print("Returned:", price)
+
+print("\n=== load_products: products.csv ===")
+csv_inventory = Inventory()
+load_products("products.csv", csv_inventory, supplier)
+csv_inventory.display_all()
+
+print("\n=== load_products: file that does not exist ===")
+load_products("missing_products.csv", csv_inventory, supplier)
