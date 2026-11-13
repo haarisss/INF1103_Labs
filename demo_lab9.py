@@ -43,3 +43,17 @@ try:
     ProductFactory.create("service", "S001", "Installation", 30.00, 5, supplier)
 except ValueError as error:
     print("Caught ValueError:", error)
+    
+
+# ---------- Section 4: Validation ----------
+print("\n=== Validation ===")
+for label, action in [
+    ("Price 0", lambda: ProductFactory.create("physical", "P020", "Free Item", 0, 5, supplier, 1.0)),
+    ("Negative stock", lambda: ProductFactory.create("physical", "P021", "Bad Stock", 10.0, -1, supplier, 1.0)),
+    ("Order quantity 0", lambda: Order("O003").add_order_line(lamp, 0)),
+]:
+    try:
+        action()
+        print(label, "-> accepted (this should not happen)")
+    except ValueError as error:
+        print(f"{label} -> ValueError: {error}")
