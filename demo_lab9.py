@@ -3,6 +3,8 @@ from physical_product import PhysicalProduct
 from order import Order
 from discount_strategy import NoDiscount, PercentageDiscount, BulkDiscount, StudentDiscount
 
+# ---------- Section 2: Strategy ----------
+
 print("=== Strategy: order discounts ===")
 supplier = Supplier("S001", "TechSource Pte Ltd", "sales@techsource.com")
 lamp = PhysicalProduct("P001", "Desk Lamp", 25.00, 10, supplier, 1.2)
@@ -25,3 +27,19 @@ print(f"StudentDiscount (5% off):       ${order.calculate_total():.2f}")
 small = Order("O002", BulkDiscount(200, 20))
 small.add_order_line(lamp, 1)              # 25, below the threshold
 print(f"Small order (25) with Bulk:     ${small.calculate_total():.2f}")
+
+
+# ---------- Section 3: Factory ----------
+from product_factory import ProductFactory
+
+print("\n=== Factory: creating products ===")
+item1 = ProductFactory.create("physical", "P010", "Keyboard", 59.90, 20, supplier, 0.9)
+item2 = ProductFactory.create("digital", "D010", "Photo Editor", 49.90, 100, supplier, 350)
+item1.display_information()
+item2.display_information()
+print("Return types:", type(item1).__name__, "and", type(item2).__name__)
+
+try:
+    ProductFactory.create("service", "S001", "Installation", 30.00, 5, supplier)
+except ValueError as error:
+    print("Caught ValueError:", error)
