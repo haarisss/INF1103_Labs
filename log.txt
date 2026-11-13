@@ -1,3 +1,111 @@
+commit f3e8788cb6aae02926e8196a8bd91e4abb66d932
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 19:28:07 2026 +0800
+
+    Saved inventory after Lab 9 testing
+
+commit f589075ac09c9cc64febd8444dde430b47bfed91
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 19:27:25 2026 +0800
+
+    Added prediction notes and reflections for lab 9
+
+commit 1580273b5fb2d2c96bc2a2fb7a0182859bf50446
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 19:13:01 2026 +0800
+
+    Updated UML class diagram with Strategy and Factory
+
+commit c650fc08b9c3975110d61b0ba113982647fc46f6
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 19:09:36 2026 +0800
+
+    Added automated unittest suite for strategies, factory, validation and loading
+
+commit 285867bbf645fcba3ad8703c4c46db9c12eaf534
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 19:04:47 2026 +0800
+
+    Updated inventory manager to use ProductFactory and input helpers
+
+commit aa599e37748e28377496c9ecd28c91f338c742d6
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 18:53:52 2026 +0800
+
+    Added exception handling demo for input and CSV loading
+
+commit f1382fe0cddcaa57ddd0631283a03bee44c04e16
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 18:08:05 2026 +0800
+
+    Added load_products with try/except/else/finally and sample products.csv
+
+commit 341e175bb8ee4224d91fc35e768a18424de77330
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 18:05:08 2026 +0800
+
+    Added input helpers that re-prompt on invalid input
+
+commit ba5dd3148760d89a87f847fb89c7c8f57f6bb5ff
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 18:03:59 2026 +0800
+
+    Added quantity validation to OrderLine and validation demo
+
+commit 46e078ef75469a839628c9aa2500d8bd0190e308
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 18:02:08 2026 +0800
+
+    Added quantity validation to OrderLine
+
+commit 539056158c32e382bf24a7b5c66d67c68154c51c
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 18:01:56 2026 +0800
+
+    Added price and stock validation to Product
+
+commit 44bdf0d4e1fa5d7a770c8315cc916127ba2bb759
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 17:58:15 2026 +0800
+
+    Added factory demo showing created types and unknown-type error
+
+commit 44628ccabebd26ab4bf7adc697b1ccd92b0e672a
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 17:53:50 2026 +0800
+
+    Added ProductFactory to centralise product creation
+
+commit cdde3e203aadf10253f6deb4723c93ba9d718e06
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 17:52:58 2026 +0800
+
+    Added StudentDiscount strategy without changing Order
+
+commit 34c42e244de101f84343b6c700ee864c352fcab0
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 17:47:50 2026 +0800
+
+    Added demo script for discount strategies
+
+commit 66b61baa72e248e5384b0c63256afc22ee27d17a
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 17:45:23 2026 +0800
+
+    Updated Order to use a DiscountStrategy instead of discount logic
+
+commit 628c67c7521b563bc9c64f029c4eb7d63861089a
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Fri Nov 13 17:44:22 2026 +0800
+
+    Added DiscountStrategy interface with NoDiscount, PercentageDiscount and BulkDiscount
+
+commit dbb3653797e8684370bd30b13b33c43a971dcc3f
+Author: Haaris <2603207@sit.singaporetech.edu.sg>
+Date:   Wed Nov 11 19:43:32 2026 +0800
+
+    Added git log and Lab 8 documentation for submission
+
 commit ef21c20248eda307f3cb8e8f1ff9f3c014cae437
 Author: Haaris <2603207@sit.singaporetech.edu.sg>
 Date:   Wed Nov 11 19:42:58 2026 +0800
