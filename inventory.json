@@ -24,5 +24,18 @@
         },
         "type": "digital",
         "download_size": 2500.0
+    },
+    {
+        "id": "P100",
+        "name": "Test Keyboard",
+        "price": 499.0,
+        "stock": 20,
+        "supplier": {
+            "id": "S900",
+            "name": "Test Supplier",
+            "contact_email": "test@supplier.com"
+        },
+        "type": "physical",
+        "weight": 1.2
     }
 ]
